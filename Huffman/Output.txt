@@ -1,0 +1,57 @@
+1. Node is A Repeated :1 times
+2. Node is B Repeated :2 times
+3. Node is C Repeated :3 times
+4. Node is D Repeated :5 times
+5. Node is E Repeated :8 times
+6. Node is F Repeated :13 times
+7. Node is G Repeated :21 times
+------AFTER A STEP------------
+1<->2 Allocated
+1. Node is AB Repeated :3 times
+3. Node is C Repeated :3 times
+4. Node is D Repeated :5 times
+5. Node is E Repeated :8 times
+6. Node is F Repeated :13 times
+7. Node is G Repeated :21 times
+------AFTER A STEP------------
+1<->3 Allocated
+1. Node is ABC Repeated :6 times
+4. Node is D Repeated :5 times
+5. Node is E Repeated :8 times
+6. Node is F Repeated :13 times
+7. Node is G Repeated :21 times
+------AFTER A STEP------------
+4<->1 Allocated
+4. Node is DABC Repeated :11 times
+5. Node is E Repeated :8 times
+6. Node is F Repeated :13 times
+7. Node is G Repeated :21 times
+------AFTER A STEP------------
+5<->4 Allocated
+5. Node is EDABC Repeated :19 times
+6. Node is F Repeated :13 times
+7. Node is G Repeated :21 times
+------AFTER A STEP------------
+6<->5 Allocated
+6. Node is FEDABC Repeated :32 times
+7. Node is G Repeated :21 times
+------AFTER A STEP------------
+7<->6 Allocated
+7. Node is GFEDABC Repeated :53 times
+
+
+->HuffmanCode:#
+1111001111011111011111111111111111110111011101110111011011011011011011011011010101010101010101010101
+010000000000000000000000
+#
+
+
+String:ABBCCCDDDDDEEEEEEEEFFFFFFFFFFFFFGGGGGGGGGGGGGGGGGGGGG
+	 Normal Size=424 bits *With Huffman code:124 bits	 Pressing:29.25
+G code:#0#
+F code:#10#
+E code:#110#
+D code:#1110#
+A code:#111100#
+B code:#111101#
+C code:#11111#
